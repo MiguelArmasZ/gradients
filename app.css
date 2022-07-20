@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #eee;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 4rem;
+  border-bottom: 3px solid darkslategray;
+  padding: 0 2rem;
+}
+
+.heading {
+  text-transform: capitalize;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 1px solid #222;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(45deg, #7a2417 50%, #3fa680);
+}
+
+.card:nth-child(2) {
+  background: radial-gradient(
+    circle at 100% 100%,
+    #7a2417 30%,
+    #3fa680 40%
+  );
+}
+
+.card:nth-child(3) {
+  background: conic-gradient(#7a2417 80%, #3fa680);
+}
